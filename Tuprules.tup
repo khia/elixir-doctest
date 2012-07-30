@@ -1,0 +1,6 @@
+APP_TOP = $(TUP_CWD)
+HOME = $(HOME)
+export HOME
+
+!elixirc = |> elixirc -o .cache %f && mv .cache/* . && rm -rf .cache |>
+!app = |> cp %f %o |>

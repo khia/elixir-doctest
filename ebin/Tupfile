@@ -1,0 +1,6 @@
+include_rules
+include $(APP_TOP)/lib/targets.tup
+: foreach $(APP_TOP)/lib/*.ex | <macros> |> !elixirc |> $(files_%b)
+: foreach $(APP_TOP)/src/*.app.src |> !app |> doctest.app
+
+

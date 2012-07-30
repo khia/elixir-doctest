@@ -1,0 +1,3 @@
+macros =
+files_doctest.ex += Elixir-DocTest.beam
+

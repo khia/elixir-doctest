@@ -1,0 +1,4 @@
+{application,doctest,
+   [{applications,[kernel,stdlib,elixir]},
+    {modules, [Elixir-DocTest]},
+    {vsn,"0.1"}]}.
